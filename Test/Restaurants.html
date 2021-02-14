@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=none">
+        <title>404 Restaurants</title>
+        <script lang="JavaScript">
+
+          function runSpeechRecognition() {
+
+
+              var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+              var recognition = new SpeechRecognition();
+               recognition.stop();
+              recognition.onresult = function(event) {
+                  var transcript = event.results[0][0].transcript;
+                  document.form.search.value= transcript;
+              };
+               recognition.start();
+          }
+        </script>
+        <style>
+            body {
+                background-color: black;
+                background-image: url('233-2337865_restaurant-hd-wallpaper.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color: turquoise;
+            }
+
+            .topnav .search-container {
+                float: right;
+            }
+
+            .topnav input[type=text] {
+                padding: 6px;
+                margin-top: 8px;
+                font-size: 17px;
+                border: none;
+            }
+
+            .topnav .search-container button {
+                float: right;
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .topnav .search-container button:hover {
+                background: #ccc;
+            }
+
+            @media screen and (max-width: 600px) {
+                .topnav .search-container {
+                    float: none;
+                }
+                .topnav a, .topnav input[type=text], .topnav .search-container button {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+                .topnav input[type=text] {
+                    border: 1px solid #ccc;  
+                }
+            }
+        </style>            
+    </head>
+    <body>
+      <ul style="list-style-type:none;">
+        
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Restaurants.html">Restaurants</a></li>
+        <li><a href="Info.html">Info</a></li>
+        <div class="topnav">
+         
+            <div class="search-container">
+              <form name="form" onsubmit="return false;">
+                <button onclick="runSpeechRecognition()"><img src="unnamed.png" width="20px" height="20px" class="vc"></button>
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search" onclick="window.location.reload();"><img src="search.png" width="15.5px" height="15.5px"></i></button>
+              </form>
+            </div>
+        
+        </div>
+    </ul>
+        <br/>
+        <br/>
+        <div>
+          <ul style="list-style-type:none;">
+          <div>
+            <li>  
+            <a href="Restaurant 1.html">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+              <img src="233-2337865_restaurant-hd-wallpaper.jpg" width="200px" height="100px">
+              <h2>Restaurant 1</h2>
+              <p>Address</p>
+            </a>
+          </div>
+          </li>
+        </div>
+      <div>
+        <li>
+          <a href="">
+          <div style="background-color: #00000077;color:white;padding:20px;">
+              <img src="wp1874157.jpg" width="200px" height="100px">
+              <h2>Restaurant 2</h2>
+              <p>Address</p>
+            </a>
+          </div>
+        </li>
+      </div>
+        <div>
+          <li>
+            <a href="">
+              <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="20200526_134253_munichhomebackground.jpg" width="200px" height="100px">
+                <h2>Restaurant 3</h2>
+                <p>Address</p>
+              </a>
+            </div>
+            </li> 
+          </div>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="andrew-seaman-sQopSb2K0CU-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 4</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="jonathan-nguyen-XwO0raJ2dQM-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 5</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="krisztina-papp-fg69ALZG7DQ-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 6</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="louis-hansel-shotsoflouis-wVoP_Q2Bg_A-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 7</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="nick-karvounis-Ciqxn7FE4vE-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 8</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="patrick-tomasso-GXXYkSwndP4-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 9</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="zakaria-zayane-0uAVsDcyD0M-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 10</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="shangyou-shi-VdRex9AiBOc-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 11</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+            <div style="background-color: #00000077;color:white;padding:20px;">
+                <img src="waldemar-brandt-yzwKXsjYyDk-unsplash.jpg" width="200px" height="100px">
+                <h2>Restaurant 12</h2>
+                <p>Address</p>
+              </a>
+            </div>
+          </li>
+          
+          </ul>
+        </div>
+
+           
+    </body>
+</html>
